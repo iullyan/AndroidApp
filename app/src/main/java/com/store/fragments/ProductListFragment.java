@@ -5,17 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.ListFragment;
 
 import com.store.R;
-import com.store.activities.ProductInfo;
+import com.store.activities.ProductInfoActivity;
 import com.store.controller.DatabaseAccess;
 import com.store.controller.Product;
 
@@ -68,7 +66,7 @@ public class ProductListFragment extends ListFragment {
     }
 
     private void openProductPage(Product product) {
-        Intent intent = new Intent(getActivity(), ProductInfo.class);
+        Intent intent = new Intent(getActivity(), ProductInfoActivity.class);
         intent.putExtra("name", product.productName);
         intent.putExtra("price", String.valueOf(product.price));
         intent.putExtra("description", product.description);

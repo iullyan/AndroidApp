@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.store.R;
 
-public class ProductInfo extends AppCompatActivity {
+public class ProductInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

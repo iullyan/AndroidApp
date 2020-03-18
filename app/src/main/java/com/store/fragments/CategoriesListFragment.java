@@ -1,29 +1,23 @@
 package com.store.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.fragment.app.ListFragment;
 
 import com.store.R;
-import com.store.activities.ProductInfo;
 import com.store.controller.Category;
 import com.store.controller.DatabaseAccess;
-import com.store.controller.Product;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class CategoriesListFragment extends ListFragment {

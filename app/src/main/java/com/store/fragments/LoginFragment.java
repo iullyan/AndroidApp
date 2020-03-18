@@ -10,8 +10,7 @@ import android.view.LayoutInflater;
 import androidx.fragment.app.DialogFragment;
 
 import com.store.R;
-import com.store.activities.ProductInfo;
-import com.store.activities.RegisterUser;
+import com.store.activities.RegisterUserActivity;
 
 public class LoginFragment extends DialogFragment {
     @Override
@@ -31,7 +30,7 @@ public class LoginFragment extends DialogFragment {
                 .setNeutralButton("Register", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getActivity(), RegisterUser.class);
+                        Intent intent = new Intent(getActivity(), RegisterUserActivity.class);
                         startActivity(intent);
                     }
                 })
