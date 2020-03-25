@@ -10,13 +10,10 @@
     tools:openDrawer="start">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
 
 
         <androidx.appcompat.widget.Toolbar
@@ -48,8 +45,9 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"
+            android:focusable="auto"
+            android:foregroundTint="#4C8DEC" />
 
 
 

@@ -26,6 +26,7 @@ public class ProductListFragment extends ListFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.product_list, container,
                 false);
 
@@ -34,15 +35,11 @@ public class ProductListFragment extends ListFragment {
 
         Bundle bundle = this.getArguments();
 
-        if(bundle != null) {
-
-
+        if (bundle != null) {
             products = databaseAccess.getProducts(bundle.getInt("categoryId"));
-            System.out.println(bundle.getInt("categoryId"));
-        }
-        else
-            products = databaseAccess.getProducts(null);
 
+        } else
+            products = databaseAccess.getProducts(null);
 
 
         databaseAccess.close();
@@ -73,4 +70,6 @@ public class ProductListFragment extends ListFragment {
         intent.putExtra("currency", product.priceCurrency);
         startActivity(intent);
     }
+
+
 }

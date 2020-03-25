@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.store.model.DatabaseOpenHelper;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class DatabaseAccess {
     private SQLiteOpenHelper openHelper;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Amazing toolbar options">
+        <ListPreference
+            android:dialogTitle="Select Color"
+            android:entries="@array/color_list"
+            android:entryValues="@array/color_list"
+            android:key="toolbar_color"
+            android:title="Change main activity toolbar color" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_size_default"
+            android:key="toolbar_opacity"
+            android:title="Toolbar opacity" />
+    </PreferenceCategory>
+</PreferenceScreen>
