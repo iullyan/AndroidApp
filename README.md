@@ -6,4 +6,7 @@
      RegisterUserActivity este apelata in fereastra-dialog de Login.
   3. Am folosit AlertDialog pentru butonul de search si pentru login.
   
-  
+ **Lab-5**
+  1. Setarile se pot accesa din meniu. Am folosit exemplul din documentatie la care am suprascris
+  functia onSharedPreferenceChanged(). La pornirea aplicatiei se realizeaza un setup al setarilor din sharedPreferences.
+  2. Produsele si categoriile sunt stocate intr-o baza de date Sqlite folosita in subpachetele Model si Controller.
