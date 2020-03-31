@@ -10,3 +10,6 @@
   1. Setarile se pot accesa din meniu. Am folosit exemplul din documentatie la care am suprascris
   functia onSharedPreferenceChanged(). La pornirea aplicatiei se realizeaza un setup al setarilor din sharedPreferences.
   2. Produsele si categoriile sunt stocate intr-o baza de date Sqlite folosita in subpachetele Model si Controller.
+
+**Lab-6**
+  Activitatile sunt pornite din meniul aplicatiei.
