@@ -1,5 +1,6 @@
 package com.store.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        Intent intent;
         switch (menuItem.getItemId()) {
             case R.id.nav_products:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProductListFragment()).commit();
@@ -95,7 +97,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_settings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
                 break;
-
+            case R.id.nav_sensors:
+                intent = new Intent(this, SensorsActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_location:
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
