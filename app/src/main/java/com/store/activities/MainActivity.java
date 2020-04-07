@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this, LocationActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.nav_camera:
+                intent = new Intent(this, CameraActivity.class);
+                startActivity(intent);
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

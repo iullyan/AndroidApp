@@ -32,6 +32,10 @@
                 android:title="Location">
 
             </item>
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_photo_camera"
+                android:title="Camera"></item>
         </menu>
     </item>
 </menu>

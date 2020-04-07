@@ -16,6 +16,15 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
     <string name="error_not_number">"Please specify a number"</string>
     <string name="label_proximity">Proximity sensor</string>
+
+
+    <string name="take_photo">take photo</string>
+    <string name="file_explorer">File explorer</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">You must grant permission to access camera and external storage to run this application.</string>
+    <string name="permission_warning">All permissions are required.</string>
+    <string name="photos_directory">EpicPictures</string>
 </resources>
