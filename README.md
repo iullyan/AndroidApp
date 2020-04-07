@@ -13,3 +13,6 @@
 
 **Lab-6**
   Activitatile sunt pornite din meniul aplicatiei.
+
+**Lab-7**
+  Imaginile sunt stocate in Internal Storage, in Pictures.
